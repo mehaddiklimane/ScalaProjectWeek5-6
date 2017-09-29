@@ -113,7 +113,7 @@ object Anagrams {
       val newTime = map(char) - time
       if (newTime != 0) map updated (char, newTime)
       else map - char
-    } }.toList
+    } }.toList.sorted
     }
 
   /** Returns a list of all anagram sentences of the given sentence.
